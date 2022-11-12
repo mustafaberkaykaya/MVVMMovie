@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		8C77A79C6603CC82FC6B1AC1 /* Pods_MVVMMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9264AA63F72FF83047A8FEE8 /* Pods_MVVMMovie.framework */; };
 		E613B2E6291FBEE8003A32A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */; };
-		E613B2E8291FBEE8003A32A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2E7291FBEE8003A32A4 /* SceneDelegate.swift */; };
 		E613B2EA291FBEE8003A32A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2E9291FBEE8003A32A4 /* ViewController.swift */; };
-		E613B2ED291FBEE8003A32A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E613B2EB291FBEE8003A32A4 /* Main.storyboard */; };
 		E613B2EF291FBEEA003A32A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E613B2EE291FBEEA003A32A4 /* Assets.xcassets */; };
 		E613B2F2291FBEEA003A32A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */; };
+		E613B2FB291FC6E4003A32A4 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2FA291FC6E4003A32A4 /* AppRouter.swift */; };
+		E613B2FD291FC6F1003A32A4 /* AppContainer .swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2FC291FC6F1003A32A4 /* AppContainer .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +22,12 @@
 		BE5BB402543CE50B69B5A8DA /* Pods-MVVMMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMMovie.debug.xcconfig"; path = "Target Support Files/Pods-MVVMMovie/Pods-MVVMMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		E613B2E2291FBEE8003A32A4 /* MVVMMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E613B2E7291FBEE8003A32A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E613B2E9291FBEE8003A32A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E613B2EC291FBEE8003A32A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E613B2EE291FBEEA003A32A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E613B2F1291FBEEA003A32A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E613B2F3291FBEEA003A32A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E613B2FA291FC6E4003A32A4 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E613B2FC291FC6F1003A32A4 /* AppContainer .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContainer .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,6 @@
 				BE5BB402543CE50B69B5A8DA /* Pods-MVVMMovie.debug.xcconfig */,
 				372BCD712ACFE01C4777F086 /* Pods-MVVMMovie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,23 @@
 		E613B2E4291FBEE8003A32A4 /* MVVMMovie */ = {
 			isa = PBXGroup;
 			children = (
+				E613B2F9291FC6C9003A32A4 /* App */,
 				E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */,
-				E613B2E7291FBEE8003A32A4 /* SceneDelegate.swift */,
 				E613B2E9291FBEE8003A32A4 /* ViewController.swift */,
-				E613B2EB291FBEE8003A32A4 /* Main.storyboard */,
 				E613B2EE291FBEEA003A32A4 /* Assets.xcassets */,
 				E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */,
 				E613B2F3291FBEEA003A32A4 /* Info.plist */,
 			);
 			path = MVVMMovie;
+			sourceTree = "<group>";
+		};
+		E613B2F9291FC6C9003A32A4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E613B2FA291FC6E4003A32A4 /* AppRouter.swift */,
+				E613B2FC291FC6F1003A32A4 /* AppContainer .swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +110,7 @@
 				E613B2DE291FBEE8003A32A4 /* Sources */,
 				E613B2DF291FBEE8003A32A4 /* Frameworks */,
 				E613B2E0291FBEE8003A32A4 /* Resources */,
+				E613B2FE291FCF11003A32A4 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -153,7 +161,6 @@
 			files = (
 				E613B2F2291FBEEA003A32A4 /* LaunchScreen.storyboard in Resources */,
 				E613B2EF291FBEEA003A32A4 /* Assets.xcassets in Resources */,
-				E613B2ED291FBEE8003A32A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +189,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E613B2FE291FCF11003A32A4 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,21 +216,14 @@
 			files = (
 				E613B2EA291FBEE8003A32A4 /* ViewController.swift in Sources */,
 				E613B2E6291FBEE8003A32A4 /* AppDelegate.swift in Sources */,
-				E613B2E8291FBEE8003A32A4 /* SceneDelegate.swift in Sources */,
+				E613B2FD291FC6F1003A32A4 /* AppContainer .swift in Sources */,
+				E613B2FB291FC6E4003A32A4 /* AppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E613B2EB291FBEE8003A32A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E613B2EC291FBEE8003A32A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,7 +362,7 @@
 				INFOPLIST_FILE = MVVMMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,7 +391,7 @@
 				INFOPLIST_FILE = MVVMMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
