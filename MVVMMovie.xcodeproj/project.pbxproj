@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C77A79C6603CC82FC6B1AC1 /* Pods_MVVMMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9264AA63F72FF83047A8FEE8 /* Pods_MVVMMovie.framework */; };
 		E613B2E6291FBEE8003A32A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */; };
 		E613B2E8291FBEE8003A32A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2E7291FBEE8003A32A4 /* SceneDelegate.swift */; };
 		E613B2EA291FBEE8003A32A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2E9291FBEE8003A32A4 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		372BCD712ACFE01C4777F086 /* Pods-MVVMMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMMovie.release.xcconfig"; path = "Target Support Files/Pods-MVVMMovie/Pods-MVVMMovie.release.xcconfig"; sourceTree = "<group>"; };
+		9264AA63F72FF83047A8FEE8 /* Pods_MVVMMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5BB402543CE50B69B5A8DA /* Pods-MVVMMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMMovie.debug.xcconfig"; path = "Target Support Files/Pods-MVVMMovie/Pods-MVVMMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		E613B2E2291FBEE8003A32A4 /* MVVMMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E613B2E7291FBEE8003A32A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C77A79C6603CC82FC6B1AC1 /* Pods_MVVMMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9ABA4A1929EE17153B05071E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9264AA63F72FF83047A8FEE8 /* Pods_MVVMMovie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D576A7E7E20FE1D61AD96D8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE5BB402543CE50B69B5A8DA /* Pods-MVVMMovie.debug.xcconfig */,
+				372BCD712ACFE01C4777F086 /* Pods-MVVMMovie.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E613B2D9291FBEE8003A32A4 = {
 			isa = PBXGroup;
 			children = (
 				E613B2E4291FBEE8003A32A4 /* MVVMMovie */,
 				E613B2E3291FBEE8003A32A4 /* Products */,
+				D576A7E7E20FE1D61AD96D8D /* Pods */,
+				9ABA4A1929EE17153B05071E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E613B2F6291FBEEA003A32A4 /* Build configuration list for PBXNativeTarget "MVVMMovie" */;
 			buildPhases = (
+				BB21E0BD9584677B33F128A6 /* [CP] Check Pods Manifest.lock */,
 				E613B2DE291FBEE8003A32A4 /* Sources */,
 				E613B2DF291FBEE8003A32A4 /* Frameworks */,
 				E613B2E0291FBEE8003A32A4 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB21E0BD9584677B33F128A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVMMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E613B2DE291FBEE8003A32A4 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		E613B2F7291FBEEA003A32A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5BB402543CE50B69B5A8DA /* Pods-MVVMMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		E613B2F8291FBEEA003A32A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372BCD712ACFE01C4777F086 /* Pods-MVVMMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
