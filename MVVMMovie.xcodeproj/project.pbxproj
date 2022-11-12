@@ -14,7 +14,26 @@
 		E613B2F2291FBEEA003A32A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */; };
 		E613B2FB291FC6E4003A32A4 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2FA291FC6E4003A32A4 /* AppRouter.swift */; };
 		E613B2FD291FC6F1003A32A4 /* AppContainer .swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B2FC291FC6F1003A32A4 /* AppContainer .swift */; };
+		E613B314291FD401003A32A4 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E613B313291FD401003A32A4 /* DataProvider.framework */; };
+		E613B315291FD401003A32A4 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E613B313291FD401003A32A4 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E613B32E291FD6D4003A32A4 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E613B32D291FD6D4003A32A4 /* UIComponents.framework */; };
+		E613B32F291FD6D4003A32A4 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E613B32D291FD6D4003A32A4 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E613B316291FD401003A32A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E613B32F291FD6D4003A32A4 /* UIComponents.framework in Embed Frameworks */,
+				E613B315291FD401003A32A4 /* DataProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		372BCD712ACFE01C4777F086 /* Pods-MVVMMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMMovie.release.xcconfig"; path = "Target Support Files/Pods-MVVMMovie/Pods-MVVMMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +47,8 @@
 		E613B2F3291FBEEA003A32A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E613B2FA291FC6E4003A32A4 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		E613B2FC291FC6F1003A32A4 /* AppContainer .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContainer .swift"; sourceTree = "<group>"; };
+		E613B313291FD401003A32A4 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E613B32D291FD6D4003A32A4 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C77A79C6603CC82FC6B1AC1 /* Pods_MVVMMovie.framework in Frameworks */,
+				E613B32E291FD6D4003A32A4 /* UIComponents.framework in Frameworks */,
+				E613B314291FD401003A32A4 /* DataProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +68,8 @@
 		9ABA4A1929EE17153B05071E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E613B32D291FD6D4003A32A4 /* UIComponents.framework */,
+				E613B313291FD401003A32A4 /* DataProvider.framework */,
 				9264AA63F72FF83047A8FEE8 /* Pods_MVVMMovie.framework */,
 			);
 			name = Frameworks;
@@ -111,6 +136,7 @@
 				E613B2DF291FBEE8003A32A4 /* Frameworks */,
 				E613B2E0291FBEE8003A32A4 /* Resources */,
 				E613B2FE291FCF11003A32A4 /* Run SwiftLint */,
+				E613B316291FD401003A32A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
