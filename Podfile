@@ -7,4 +7,6 @@ target 'MVVMMovie' do
 
   # Pods for MVVMMovie
 
+   pod 'SwiftLint', '~> 0.49'
+
 end
