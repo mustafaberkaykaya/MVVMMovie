@@ -29,6 +29,7 @@
 		E613B38429202BFB003A32A4 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35829201265003A32A4 /* Inter-Regular.ttf */; };
 		E613B38529202BFB003A32A4 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35E29201265003A32A4 /* Inter-SemiBold.ttf */; };
 		E613B38629202BFB003A32A4 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35D29201265003A32A4 /* Inter-Thin.ttf */; };
+		E69DF102292102DA002EEAE9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF101292102DA002EEAE9 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		E613B37129201C76003A32A4 /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		E613B375292022CE003A32A4 /* Fonts+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Extension.swift"; sourceTree = "<group>"; };
 		E613B37929202442003A32A4 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = ../../../../../../Fonts.swift; sourceTree = "<group>"; };
+		E69DF101292102DA002EEAE9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		E613B325291FD6A1003A32A4 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E69DF1002921028A002EEAE9 /* UIViews */,
 				E613B336291FFDAE003A32A4 /* Resources */,
 				E613B326291FD6A1003A32A4 /* UIComponents.h */,
 			);
@@ -173,6 +176,14 @@
 				E613B36E29201C6E003A32A4 /* Assets.swift */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E69DF1002921028A002EEAE9 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				E69DF101292102DA002EEAE9 /* LoadingView.swift */,
+			);
+			path = UIViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 				E613B37329201C76003A32A4 /* UIColor+Colors.swift in Sources */,
 				E613B37229201C76003A32A4 /* UIImage+Images.swift in Sources */,
 				E613B36F29201C6E003A32A4 /* Assets.swift in Sources */,
+				E69DF102292102DA002EEAE9 /* LoadingView.swift in Sources */,
 				E613B3692920198C003A32A4 /* StringsConstant.swift in Sources */,
 				E613B376292022CE003A32A4 /* Fonts+Extension.swift in Sources */,
 			);
