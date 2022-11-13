@@ -30,7 +30,7 @@ target 'DataProvider' do
   # Pods for DataProvider
   
   # Network
- 
+  pod 'Alamofire', '~> 5.6'
 
 end
 
