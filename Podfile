@@ -8,7 +8,18 @@ target 'MVVMMovie' do
 
   # Pods for MVVMMovie
 
+  # Helper
    pod 'SwiftLint', '~> 0.49'
+   
+   # UI
+   pod 'lottie-ios'
+   pod 'SwiftEntryKit', '2.0.0'
+   pod 'TinyConstraints', '~> 4.0'
+   
+   # Network
+   pod 'Firebase/RemoteConfig'
+   pod 'Alamofire', '~> 5.6'
+
 
 end
 
@@ -31,5 +42,9 @@ target 'UIComponents' do
   
   # Helper
   pod 'SwiftGen', '~> 6.6'
+  
+  # UI
+  pod 'lottie-ios'
+  pod 'TinyConstraints', '~> 4.0'
 
 end
