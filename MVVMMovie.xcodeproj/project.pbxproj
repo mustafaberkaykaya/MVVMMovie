@@ -23,6 +23,12 @@
 		E69DF0F62920646B002EEAE9 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0F52920646B002EEAE9 /* SplashViewModel.swift */; };
 		E69DF0F82920648B002EEAE9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0F72920648B002EEAE9 /* SplashViewController.swift */; };
 		E69DF0FA292064C2002EEAE9 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0F9292064C2002EEAE9 /* SplashRouter.swift */; };
+		E69DF0FC29206C51002EEAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E69DF0FB29206C51002EEAE9 /* GoogleService-Info.plist */; };
+		E69DF0FF2920F6C3002EEAE9 /* SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0FE2920F6C3002EEAE9 /* SwiftEntryKit.swift */; };
+		E69DF1042921044B002EEAE9 /* spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = E69DF1032921044B002EEAE9 /* spinner.json */; };
+		E69DF10729210988002EEAE9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10629210988002EEAE9 /* HomeRouter.swift */; };
+		E69DF10929210995002EEAE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10829210995002EEAE9 /* HomeViewController.swift */; };
+		E69DF10B292109A3002EEAE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10A292109A3002EEAE9 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +66,12 @@
 		E69DF0F52920646B002EEAE9 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		E69DF0F72920648B002EEAE9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E69DF0F9292064C2002EEAE9 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		E69DF0FB29206C51002EEAE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E69DF0FE2920F6C3002EEAE9 /* SwiftEntryKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEntryKit.swift; sourceTree = "<group>"; };
+		E69DF1032921044B002EEAE9 /* spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = spinner.json; path = ../../../spinner.json; sourceTree = "<group>"; };
+		E69DF10629210988002EEAE9 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		E69DF10829210995002EEAE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E69DF10A292109A3002EEAE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +128,14 @@
 		E613B2E4291FBEE8003A32A4 /* MVVMMovie */ = {
 			isa = PBXGroup;
 			children = (
+				E69DF0FD2920F6AE002EEAE9 /* Helper */,
 				E613B3922920580D003A32A4 /* Configuration */,
 				E613B38D29205680003A32A4 /* Constants */,
 				E613B389292055D5003A32A4 /* Scenes */,
 				E613B2F9291FC6C9003A32A4 /* App */,
 				E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */,
 				E613B2EE291FBEEA003A32A4 /* Assets.xcassets */,
+				E69DF1032921044B002EEAE9 /* spinner.json */,
 				E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */,
 			);
 			path = MVVMMovie;
@@ -139,6 +153,7 @@
 		E613B389292055D5003A32A4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E69DF10529210980002EEAE9 /* Home */,
 				E69DF0F429206454002EEAE9 /* Splash */,
 				E613B38A29205622003A32A4 /* Base */,
 			);
@@ -167,6 +182,7 @@
 			children = (
 				E69DF0F129206215002EEAE9 /* Info.plist */,
 				E613B39329205843003A32A4 /* MVVMMovie-Bridging-Header.h */,
+				E69DF0FB29206C51002EEAE9 /* GoogleService-Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -179,6 +195,24 @@
 				E69DF0F9292064C2002EEAE9 /* SplashRouter.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		E69DF0FD2920F6AE002EEAE9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E69DF0FE2920F6C3002EEAE9 /* SwiftEntryKit.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E69DF10529210980002EEAE9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E69DF10629210988002EEAE9 /* HomeRouter.swift */,
+				E69DF10829210995002EEAE9 /* HomeViewController.swift */,
+				E69DF10A292109A3002EEAE9 /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +228,7 @@
 				E613B2E0291FBEE8003A32A4 /* Resources */,
 				E613B2FE291FCF11003A32A4 /* Run SwiftLint */,
 				E613B316291FD401003A32A4 /* Embed Frameworks */,
+				05C9BF66B6199C7894AF5A23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,12 +279,31 @@
 			files = (
 				E613B2F2291FBEEA003A32A4 /* LaunchScreen.storyboard in Resources */,
 				E613B2EF291FBEEA003A32A4 /* Assets.xcassets in Resources */,
+				E69DF0FC29206C51002EEAE9 /* GoogleService-Info.plist in Resources */,
+				E69DF1042921044B002EEAE9 /* spinner.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05C9BF66B6199C7894AF5A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMMovie/Pods-MVVMMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMMovie/Pods-MVVMMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMMovie/Pods-MVVMMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB21E0BD9584677B33F128A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,10 +356,14 @@
 				E613B38F292056A5003A32A4 /* Closures.swift in Sources */,
 				E69DF0F62920646B002EEAE9 /* SplashViewModel.swift in Sources */,
 				E613B2FD291FC6F1003A32A4 /* AppContainer .swift in Sources */,
+				E69DF0FF2920F6C3002EEAE9 /* SwiftEntryKit.swift in Sources */,
 				E613B2FB291FC6E4003A32A4 /* AppRouter.swift in Sources */,
 				E613B39129205736003A32A4 /* BaseViewController.swift in Sources */,
+				E69DF10B292109A3002EEAE9 /* HomeViewModel.swift in Sources */,
 				E69DF0FA292064C2002EEAE9 /* SplashRouter.swift in Sources */,
 				E69DF0F82920648B002EEAE9 /* SplashViewController.swift in Sources */,
+				E69DF10729210988002EEAE9 /* HomeRouter.swift in Sources */,
+				E69DF10929210995002EEAE9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
