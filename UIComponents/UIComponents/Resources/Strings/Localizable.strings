@@ -6,4 +6,5 @@
   
 */
 
-
+// MARK: - SplashScreen
+"Splash.nonWifi" = "İnternet bağlantınız bulunmamaktadır.";
