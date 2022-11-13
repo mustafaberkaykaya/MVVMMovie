@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9E5764F039F4A26B5C83106D /* libPods-DataProvider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA85CEF7501848D13135AC4 /* libPods-DataProvider.a */; };
 		E613B30D291FD39E003A32A4 /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E613B30C291FD39E003A32A4 /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69DF10E292127E7002EEAE9 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10D292127E7002EEAE9 /* ServiceManager.swift */; };
+		E69DF110292127EF002EEAE9 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10F292127EF002EEAE9 /* WebService.swift */; };
+		E69DF11329212954002EEAE9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF11229212954002EEAE9 /* Search.swift */; };
+		E69DF11629212B4F002EEAE9 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF11529212B4F002EEAE9 /* Movies.swift */; };
+		E69DF11B29213071002EEAE9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF11A29213071002EEAE9 /* Constant.swift */; };
+		E69DF11D29213098002EEAE9 /* ServiceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF11C29213098002EEAE9 /* ServiceConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +22,12 @@
 		58AB04C4CC1E40F797E5DC4A /* Pods-DataProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.debug.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		E613B309291FD39E003A32A4 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E613B30C291FD39E003A32A4 /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		E69DF10D292127E7002EEAE9 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		E69DF10F292127EF002EEAE9 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E69DF11229212954002EEAE9 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		E69DF11529212B4F002EEAE9 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		E69DF11A29213071002EEAE9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E69DF11C29213098002EEAE9 /* ServiceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstant.swift; sourceTree = "<group>"; };
 		FEDA419C3D8962797C3C84C2 /* Pods-DataProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.release.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,9 +82,39 @@
 		E613B30B291FD39E003A32A4 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				E69DF11929212FC7002EEAE9 /* Constant */,
+				E69DF1112921282D002EEAE9 /* Model */,
+				E69DF10C292127D3002EEAE9 /* Service */,
 				E613B30C291FD39E003A32A4 /* DataProvider.h */,
 			);
 			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		E69DF10C292127D3002EEAE9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E69DF10D292127E7002EEAE9 /* ServiceManager.swift */,
+				E69DF10F292127EF002EEAE9 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E69DF1112921282D002EEAE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E69DF11229212954002EEAE9 /* Search.swift */,
+				E69DF11529212B4F002EEAE9 /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E69DF11929212FC7002EEAE9 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E69DF11A29213071002EEAE9 /* Constant.swift */,
+				E69DF11C29213098002EEAE9 /* ServiceConstant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E69DF11329212954002EEAE9 /* Search.swift in Sources */,
+				E69DF110292127EF002EEAE9 /* WebService.swift in Sources */,
+				E69DF11629212B4F002EEAE9 /* Movies.swift in Sources */,
+				E69DF10E292127E7002EEAE9 /* ServiceManager.swift in Sources */,
+				E69DF11B29213071002EEAE9 /* Constant.swift in Sources */,
+				E69DF11D29213098002EEAE9 /* ServiceConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
