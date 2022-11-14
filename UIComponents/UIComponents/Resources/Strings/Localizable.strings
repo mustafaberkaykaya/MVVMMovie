@@ -9,6 +9,11 @@
 // MARK: - SplashScreen
 "Splash.nonWifi" = "İnternet bağlantınız bulunmamaktadır.";
 
-// MARK: - SplashScreen
+// MARK: - HomeScreen
 "Home.SeachBar" = "Search";
 "Home.MovieError" = "Movie Not Found";
+
+// MARK: - HomeDetail
+"Detail.movieDesTitle" = "Movie Description";
+"Detail.actorsTitle" = "Actors";
+"Detail.yearTitle" = "Year";
