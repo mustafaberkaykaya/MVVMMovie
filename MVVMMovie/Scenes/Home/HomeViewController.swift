@@ -95,6 +95,10 @@ extension HomeViewController: UICollectionViewDelegate {
             viewModel.searchRemainingMovies()
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectItem(indexPath: indexPath)
+    }
 }
 
 // MARK: - CollectionViewDataSource
@@ -128,5 +132,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+}
+
+// MARK: - RouteDelegate
+extension HomeViewController: HomeViewRouteDelegate {
+    
+    func showDetail(movie: Search) {
+        let viewController = DetailRouter.create(movie: movie)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

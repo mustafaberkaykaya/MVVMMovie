@@ -20,6 +20,11 @@ protocol HomeViewEventSource {
 protocol HomeViewProtocol: HomeViewDataSource, HomeViewEventSource {
     func searchMovie(movie: String)
     func searchRemainingMovies()
+    func didSelectItem(indexPath: IndexPath)
+}
+
+protocol HomeViewRouteDelegate: AnyObject {
+    func showDetail(movie: Search)
 }
 
 final class HomeViewModel: BaseViewModel, HomeViewProtocol {
@@ -27,6 +32,7 @@ final class HomeViewModel: BaseViewModel, HomeViewProtocol {
    // Privates
     private var service: ServiceProtocol
     private var cellItems: [MovieCellProtocol] = []
+    private var movies: [Search] = []
     private var timer: Timer?
     private var isSearchable = false
     private var page = 1
@@ -34,6 +40,7 @@ final class HomeViewModel: BaseViewModel, HomeViewProtocol {
     
     // EventSource
     var reloadData: VoidClosure?
+    weak var routeDelegate: HomeViewRouteDelegate?
     
     // MARK: - DataSource
     var numberOfItems: Int {
@@ -69,6 +76,7 @@ extension HomeViewModel {
                         self.reloadData?()
                     } else {
                         self.cellItems = movies?.search?.map { MovieCellModel(movie: $0) } ?? []
+                        self.movies = movies?.search ?? []
                         guard let totalCount = movies?.totalCount else { return }
                         self.isSearchable = self.cellItems.count < totalCount
                         self.reloadData?()
@@ -101,6 +109,7 @@ extension HomeViewModel {
                 } else {
                     let movieList = movies?.search?.map { MovieCellModel(movie: $0) } ?? []
                     self.cellItems.append(contentsOf: movieList)
+                    self.movies.append(contentsOf: movies?.search ?? [])
                     guard let totalCount = movies?.totalCount else { return }
                     self.isSearchable = self.cellItems.count < totalCount
                     self.reloadData?()
@@ -111,5 +120,14 @@ extension HomeViewModel {
                 print(error?.localizedDescription)
             }
         }
+    }
+}
+
+// MARK: - Action
+extension HomeViewModel {
+    
+    func didSelectItem(indexPath: IndexPath) {
+        let movie = self.movies[indexPath.row]
+        routeDelegate?.showDetail(movie: movie)
     }
 }

@@ -30,6 +30,9 @@
 		E69DF10929210995002EEAE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10829210995002EEAE9 /* HomeViewController.swift */; };
 		E69DF10B292109A3002EEAE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10A292109A3002EEAE9 /* HomeViewModel.swift */; };
 		E69FD4F329219AD1004B49B2 /* MovieCellModel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FD4F229219AD1004B49B2 /* MovieCellModel + Extension.swift */; };
+		E69FD4FC29228DAA004B49B2 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FD4FB29228DAA004B49B2 /* DetailViewModel.swift */; };
+		E69FD4FE29228EDF004B49B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FD4FD29228EDF004B49B2 /* DetailViewController.swift */; };
+		E69FD50029228FDA004B49B2 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FD4FF29228FDA004B49B2 /* DetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +77,9 @@
 		E69DF10829210995002EEAE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E69DF10A292109A3002EEAE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E69FD4F229219AD1004B49B2 /* MovieCellModel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieCellModel + Extension.swift"; sourceTree = "<group>"; };
+		E69FD4FB29228DAA004B49B2 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		E69FD4FD29228EDF004B49B2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E69FD4FF29228FDA004B49B2 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 		E613B389292055D5003A32A4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E69FD4FA29228D89004B49B2 /* Detail */,
 				E69DF10529210980002EEAE9 /* Home */,
 				E69DF0F429206454002EEAE9 /* Splash */,
 				E613B38A29205622003A32A4 /* Base */,
@@ -224,6 +231,16 @@
 				E69FD4F229219AD1004B49B2 /* MovieCellModel + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E69FD4FA29228D89004B49B2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E69FD4FB29228DAA004B49B2 /* DetailViewModel.swift */,
+				E69FD4FD29228EDF004B49B2 /* DetailViewController.swift */,
+				E69FD4FF29228FDA004B49B2 /* DetailRouter.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,12 +386,15 @@
 				E69DF0F62920646B002EEAE9 /* SplashViewModel.swift in Sources */,
 				E613B2FD291FC6F1003A32A4 /* AppContainer .swift in Sources */,
 				E69DF0FF2920F6C3002EEAE9 /* SwiftEntryKit.swift in Sources */,
+				E69FD4FE29228EDF004B49B2 /* DetailViewController.swift in Sources */,
 				E613B2FB291FC6E4003A32A4 /* AppRouter.swift in Sources */,
 				E613B39129205736003A32A4 /* BaseViewController.swift in Sources */,
 				E69DF10B292109A3002EEAE9 /* HomeViewModel.swift in Sources */,
 				E69DF0FA292064C2002EEAE9 /* SplashRouter.swift in Sources */,
 				E69DF0F82920648B002EEAE9 /* SplashViewController.swift in Sources */,
 				E69DF10729210988002EEAE9 /* HomeRouter.swift in Sources */,
+				E69FD50029228FDA004B49B2 /* DetailRouter.swift in Sources */,
+				E69FD4FC29228DAA004B49B2 /* DetailViewModel.swift in Sources */,
 				E69DF10929210995002EEAE9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,5 +17,9 @@ extension Constant {
         static func searchMovie(searchMovieName: String, page: Int) -> String {
             "\(baseUrl.rawValue)\(apiKey.rawValue)&s=\(searchMovieName)&page=\(page)"
         }
+        
+        static func searchDetailMovie(imdbId: String) -> String {
+            "\(baseUrl.rawValue)\(apiKey.rawValue)&i=\(imdbId)"
+        }
     }
 }
