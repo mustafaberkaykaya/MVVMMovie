@@ -10,6 +10,7 @@ target 'MVVMMovie' do
 
   # Helper
    pod 'SwiftLint', '~> 0.49'
+   pod 'Kingfisher', '~> 7.4'
    
    # UI
    pod 'lottie-ios'
@@ -42,6 +43,7 @@ target 'UIComponents' do
   
   # Helper
   pod 'SwiftGen', '~> 6.6'
+  pod 'Kingfisher', '~> 7.4'
   
   # UI
   pod 'lottie-ios'

@@ -31,6 +31,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.8.0)"
   - GoogleUtilities/UserDefaults (7.8.0):
     - GoogleUtilities/Logger
+  - Kingfisher (7.4.1)
   - lottie-ios (3.5.0)
   - PromisesObjC (2.1.1)
   - SwiftEntryKit (2.0.0)
@@ -41,6 +42,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.6)
   - Firebase/RemoteConfig
+  - Kingfisher (~> 7.4)
   - lottie-ios
   - SwiftEntryKit (= 2.0.0)
   - SwiftGen (~> 6.6)
@@ -57,6 +59,7 @@ SPEC REPOS:
     - FirebaseInstallations
     - FirebaseRemoteConfig
     - GoogleUtilities
+    - Kingfisher
     - lottie-ios
     - PromisesObjC
     - SwiftEntryKit
@@ -73,6 +76,7 @@ SPEC CHECKSUMS:
   FirebaseInstallations: 99d24bac0243cf8b0e96cf5426340d211f0bcc80
   FirebaseRemoteConfig: 20a413ed3ffeb84c12888bff19d02464f0faed69
   GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
   lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
@@ -80,6 +84,6 @@ SPEC CHECKSUMS:
   SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 74fafb7df4126779e925bc7659b14fce448915fc
+PODFILE CHECKSUM: 6a21389ec0acb9f474bbb48ba2af35cd0234ef5e
 
 COCOAPODS: 1.11.3
