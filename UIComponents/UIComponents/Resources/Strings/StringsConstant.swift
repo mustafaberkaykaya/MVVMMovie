@@ -13,6 +13,13 @@ public enum L10n {
   /// Update bundle if you need to change app language
   public static var bundle: Bundle?
 
+  public enum Home {
+    /// Movie Not Found
+    public static var movieError: String { return L10n.tr("Localizable", "Home.MovieError") }
+    /// Search
+    public static var seachBar: String { return L10n.tr("Localizable", "Home.SeachBar") }
+  }
+
   public enum Splash {
     /// İnternet bağlantınız bulunmamaktadır.
     public static var nonWifi: String { return L10n.tr("Localizable", "Splash.nonWifi") }

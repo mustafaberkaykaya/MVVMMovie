@@ -8,7 +8,8 @@
 final class HomeRouter {
 
     static func createHomeScreen() -> HomeViewController {
-        let viewModel = HomeViewModel()
+        let service = Service()
+        let viewModel = HomeViewModel(service: service)
         let viewController = HomeViewController(viewModel: viewModel)
         return viewController
     }
