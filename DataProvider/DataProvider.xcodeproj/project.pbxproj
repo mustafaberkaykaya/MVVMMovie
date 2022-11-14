@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E5764F039F4A26B5C83106D /* libPods-DataProvider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA85CEF7501848D13135AC4 /* libPods-DataProvider.a */; };
 		E613B30D291FD39E003A32A4 /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E613B30C291FD39E003A32A4 /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6403DDD2922D0180019BFCB /* MoviesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6403DDC2922D0180019BFCB /* MoviesDetail.swift */; };
 		E69DF10E292127E7002EEAE9 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10D292127E7002EEAE9 /* ServiceManager.swift */; };
 		E69DF110292127EF002EEAE9 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10F292127EF002EEAE9 /* WebService.swift */; };
 		E69DF11329212954002EEAE9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF11229212954002EEAE9 /* Search.swift */; };
@@ -22,6 +23,7 @@
 		58AB04C4CC1E40F797E5DC4A /* Pods-DataProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.debug.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		E613B309291FD39E003A32A4 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E613B30C291FD39E003A32A4 /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		E6403DDC2922D0180019BFCB /* MoviesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetail.swift; sourceTree = "<group>"; };
 		E69DF10D292127E7002EEAE9 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		E69DF10F292127EF002EEAE9 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		E69DF11229212954002EEAE9 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				E69DF11229212954002EEAE9 /* Search.swift */,
 				E69DF11529212B4F002EEAE9 /* Movies.swift */,
+				E6403DDC2922D0180019BFCB /* MoviesDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6403DDD2922D0180019BFCB /* MoviesDetail.swift in Sources */,
 				E69DF11329212954002EEAE9 /* Search.swift in Sources */,
 				E69DF110292127EF002EEAE9 /* WebService.swift in Sources */,
 				E69DF11629212B4F002EEAE9 /* Movies.swift in Sources */,
