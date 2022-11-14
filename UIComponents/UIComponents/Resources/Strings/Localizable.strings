@@ -8,3 +8,7 @@
 
 // MARK: - SplashScreen
 "Splash.nonWifi" = "İnternet bağlantınız bulunmamaktadır.";
+
+// MARK: - SplashScreen
+"Home.SeachBar" = "Search";
+"Home.MovieError" = "Movie Not Found";

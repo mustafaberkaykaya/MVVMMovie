@@ -43,6 +43,7 @@ public enum Asset {
   public enum Images {
     public static let cancel24 = ImageAsset(name: "cancel24")
     public static let check24 = ImageAsset(name: "check24")
+    public static let nonePhoto = ImageAsset(name: "nonePhoto")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

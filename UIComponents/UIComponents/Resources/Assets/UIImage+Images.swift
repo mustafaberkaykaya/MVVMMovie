@@ -13,6 +13,10 @@ public extension UIImage {
   static var check24: UIImage {
       return Asset.Images.check24.image
   }
+
+  static var nonePhoto: UIImage {
+      return Asset.Images.nonePhoto.image
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
