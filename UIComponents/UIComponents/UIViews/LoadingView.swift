@@ -12,7 +12,7 @@ import TinyConstraints
 
 public class LoadingView: UIView {
     
-    private var animationView = AnimationView(name: "spinner")
+    private var animationView = AnimationView(name: "loadingSpinner")
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
