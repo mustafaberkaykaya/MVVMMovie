@@ -20,12 +20,12 @@
 		E613B38C2920563D003A32A4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B38B2920563D003A32A4 /* BaseViewModel.swift */; };
 		E613B38F292056A5003A32A4 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B38E292056A5003A32A4 /* Closures.swift */; };
 		E613B39129205736003A32A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B39029205736003A32A4 /* BaseViewController.swift */; };
+		E65476C529232E07007FA852 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65476C429232E07007FA852 /* GoogleService-Info.plist */; };
+		E65476C929232F71007FA852 /* loadingSpinner.json in Resources */ = {isa = PBXBuildFile; fileRef = E65476C829232F71007FA852 /* loadingSpinner.json */; };
 		E69DF0F62920646B002EEAE9 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0F52920646B002EEAE9 /* SplashViewModel.swift */; };
 		E69DF0F82920648B002EEAE9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0F72920648B002EEAE9 /* SplashViewController.swift */; };
 		E69DF0FA292064C2002EEAE9 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0F9292064C2002EEAE9 /* SplashRouter.swift */; };
-		E69DF0FC29206C51002EEAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E69DF0FB29206C51002EEAE9 /* GoogleService-Info.plist */; };
 		E69DF0FF2920F6C3002EEAE9 /* SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF0FE2920F6C3002EEAE9 /* SwiftEntryKit.swift */; };
-		E69DF1042921044B002EEAE9 /* spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = E69DF1032921044B002EEAE9 /* spinner.json */; };
 		E69DF10729210988002EEAE9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10629210988002EEAE9 /* HomeRouter.swift */; };
 		E69DF10929210995002EEAE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10829210995002EEAE9 /* HomeViewController.swift */; };
 		E69DF10B292109A3002EEAE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF10A292109A3002EEAE9 /* HomeViewModel.swift */; };
@@ -66,13 +66,13 @@
 		E613B38E292056A5003A32A4 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		E613B39029205736003A32A4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E613B39329205843003A32A4 /* MVVMMovie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVVMMovie-Bridging-Header.h"; sourceTree = "<group>"; };
+		E65476C429232E07007FA852 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E65476C829232F71007FA852 /* loadingSpinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingSpinner.json; sourceTree = "<group>"; };
 		E69DF0F129206215002EEAE9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69DF0F52920646B002EEAE9 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		E69DF0F72920648B002EEAE9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E69DF0F9292064C2002EEAE9 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
-		E69DF0FB29206C51002EEAE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E69DF0FE2920F6C3002EEAE9 /* SwiftEntryKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEntryKit.swift; sourceTree = "<group>"; };
-		E69DF1032921044B002EEAE9 /* spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = spinner.json; path = ../../../spinner.json; sourceTree = "<group>"; };
 		E69DF10629210988002EEAE9 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		E69DF10829210995002EEAE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E69DF10A292109A3002EEAE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -136,15 +136,13 @@
 		E613B2E4291FBEE8003A32A4 /* MVVMMovie */ = {
 			isa = PBXGroup;
 			children = (
+				E65476C629232ED5007FA852 /* Resources */,
 				E69FD4F129219AB9004B49B2 /* Extensions */,
 				E69DF0FD2920F6AE002EEAE9 /* Helper */,
 				E613B3922920580D003A32A4 /* Configuration */,
 				E613B38D29205680003A32A4 /* Constants */,
 				E613B389292055D5003A32A4 /* Scenes */,
 				E613B2F9291FC6C9003A32A4 /* App */,
-				E613B2EE291FBEEA003A32A4 /* Assets.xcassets */,
-				E69DF1032921044B002EEAE9 /* spinner.json */,
-				E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */,
 			);
 			path = MVVMMovie;
 			sourceTree = "<group>";
@@ -192,9 +190,19 @@
 			children = (
 				E69DF0F129206215002EEAE9 /* Info.plist */,
 				E613B39329205843003A32A4 /* MVVMMovie-Bridging-Header.h */,
-				E69DF0FB29206C51002EEAE9 /* GoogleService-Info.plist */,
+				E65476C429232E07007FA852 /* GoogleService-Info.plist */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E65476C629232ED5007FA852 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E65476C829232F71007FA852 /* loadingSpinner.json */,
+				E613B2EE291FBEEA003A32A4 /* Assets.xcassets */,
+				E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E69DF0F429206454002EEAE9 /* Splash */ = {
@@ -305,10 +313,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65476C929232F71007FA852 /* loadingSpinner.json in Resources */,
 				E613B2F2291FBEEA003A32A4 /* LaunchScreen.storyboard in Resources */,
+				E65476C529232E07007FA852 /* GoogleService-Info.plist in Resources */,
 				E613B2EF291FBEEA003A32A4 /* Assets.xcassets in Resources */,
-				E69DF0FC29206C51002EEAE9 /* GoogleService-Info.plist in Resources */,
-				E69DF1042921044B002EEAE9 /* spinner.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
