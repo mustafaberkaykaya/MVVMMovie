@@ -142,7 +142,6 @@
 				E613B38D29205680003A32A4 /* Constants */,
 				E613B389292055D5003A32A4 /* Scenes */,
 				E613B2F9291FC6C9003A32A4 /* App */,
-				E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */,
 				E613B2EE291FBEEA003A32A4 /* Assets.xcassets */,
 				E69DF1032921044B002EEAE9 /* spinner.json */,
 				E613B2F0291FBEEA003A32A4 /* LaunchScreen.storyboard */,
@@ -155,6 +154,7 @@
 			children = (
 				E613B2FA291FC6E4003A32A4 /* AppRouter.swift */,
 				E613B2FC291FC6F1003A32A4 /* AppContainer .swift */,
+				E613B2E5291FBEE8003A32A4 /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";

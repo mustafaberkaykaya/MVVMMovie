@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAnalytics
 
 protocol DetailViewDataSource {
     var movieImage: URL? { get }
@@ -40,6 +41,7 @@ extension DetailViewModel {
     func getMovieDetailRequest() {
         showLoading?()
         service.searchDetailMovie(imdbId: movie.imdbID!) { moviesDetail in
+            self.logToFirebase(detail: moviesDetail)
             self.moviesDetail = moviesDetail
             self.fetchedDetailValues?()
             self.hideLoading?()
@@ -47,5 +49,13 @@ extension DetailViewModel {
             EntryKitHelper.show(error?.localizedDescription, type: .error)
             self.hideLoading?()
         }
+    }
+    
+    private func logToFirebase(detail: MoviesDetail?) {
+        Analytics.logEvent("MovieDetail", parameters: [
+            "movieYear": detail?.year ?? "",
+            "movieName": detail?.title ?? "",
+            "moviePoint": detail?.imdbRating ?? "",
+        ])
     }
 }
