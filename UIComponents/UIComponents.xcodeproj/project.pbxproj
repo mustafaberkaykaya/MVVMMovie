@@ -19,7 +19,6 @@
 		E613B37229201C76003A32A4 /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B37029201C76003A32A4 /* UIImage+Images.swift */; };
 		E613B37329201C76003A32A4 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B37129201C76003A32A4 /* UIColor+Colors.swift */; };
 		E613B376292022CE003A32A4 /* Fonts+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B375292022CE003A32A4 /* Fonts+Extension.swift */; };
-		E613B37A29202442003A32A4 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613B37929202442003A32A4 /* Fonts.swift */; };
 		E613B37E29202BFB003A32A4 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35C29201265003A32A4 /* Inter-Black.ttf */; };
 		E613B37F29202BFB003A32A4 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B36029201265003A32A4 /* Inter-Bold.ttf */; };
 		E613B38029202BFB003A32A4 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35A29201265003A32A4 /* Inter-ExtraBold.ttf */; };
@@ -28,7 +27,7 @@
 		E613B38329202BFB003A32A4 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35F29201265003A32A4 /* Inter-Medium.ttf */; };
 		E613B38429202BFB003A32A4 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35829201265003A32A4 /* Inter-Regular.ttf */; };
 		E613B38529202BFB003A32A4 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35E29201265003A32A4 /* Inter-SemiBold.ttf */; };
-		E613B38629202BFB003A32A4 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E613B35D29201265003A32A4 /* Inter-Thin.ttf */; };
+		E65476CF292393C9007FA852 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65476CE292393C9007FA852 /* Fonts.swift */; };
 		E69DF102292102DA002EEAE9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DF101292102DA002EEAE9 /* LoadingView.swift */; };
 		E69FD4E829216A40004B49B2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FD4E729216A40004B49B2 /* MovieCell.swift */; };
 		E69FD4EA29216A49004B49B2 /* MovieCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FD4E929216A49004B49B2 /* MovieCellModel.swift */; };
@@ -49,7 +48,6 @@
 		E613B35A29201265003A32A4 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		E613B35B29201265003A32A4 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		E613B35C29201265003A32A4 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
-		E613B35D29201265003A32A4 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		E613B35E29201265003A32A4 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		E613B35F29201265003A32A4 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		E613B36029201265003A32A4 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
@@ -62,7 +60,8 @@
 		E613B37029201C76003A32A4 /* UIImage+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
 		E613B37129201C76003A32A4 /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		E613B375292022CE003A32A4 /* Fonts+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Extension.swift"; sourceTree = "<group>"; };
-		E613B37929202442003A32A4 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = ../../../../../../Fonts.swift; sourceTree = "<group>"; };
+		E65476CE292393C9007FA852 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E65476D02923946D007FA852 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		E69DF101292102DA002EEAE9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E69FD4E729216A40004B49B2 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		E69FD4E929216A49004B49B2 /* MovieCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellModel.swift; sourceTree = "<group>"; };
@@ -156,7 +155,7 @@
 		E613B33B29201139003A32A4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E613B37929202442003A32A4 /* Fonts.swift */,
+				E65476CE292393C9007FA852 /* Fonts.swift */,
 				E613B33C2920114C003A32A4 /* Inter */,
 				E613B375292022CE003A32A4 /* Fonts+Extension.swift */,
 			);
@@ -174,7 +173,7 @@
 				E613B35F29201265003A32A4 /* Inter-Medium.ttf */,
 				E613B35829201265003A32A4 /* Inter-Regular.ttf */,
 				E613B35E29201265003A32A4 /* Inter-SemiBold.ttf */,
-				E613B35D29201265003A32A4 /* Inter-Thin.ttf */,
+				E65476D02923946D007FA852 /* Inter-Thin.ttf */,
 			);
 			path = Inter;
 			sourceTree = "<group>";
@@ -305,7 +304,6 @@
 				E613B38329202BFB003A32A4 /* Inter-Medium.ttf in Resources */,
 				E613B38429202BFB003A32A4 /* Inter-Regular.ttf in Resources */,
 				E613B38529202BFB003A32A4 /* Inter-SemiBold.ttf in Resources */,
-				E613B38629202BFB003A32A4 /* Inter-Thin.ttf in Resources */,
 				E613B3652920138C003A32A4 /* Images.xcassets in Resources */,
 				E613B33A29200F07003A32A4 /* Localizable.strings in Resources */,
 				E613B36329201375003A32A4 /* Colors.xcassets in Resources */,
@@ -364,8 +362,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E69FD4F029216D6A004B49B2 /* UICollectionView+Extension.swift in Sources */,
-				E613B37A29202442003A32A4 /* Fonts.swift in Sources */,
 				E613B36B292019E2003A32A4 /* LocalizeManager.swift in Sources */,
+				E65476CF292393C9007FA852 /* Fonts.swift in Sources */,
 				E69FD4E829216A40004B49B2 /* MovieCell.swift in Sources */,
 				E613B37329201C76003A32A4 /* UIColor+Colors.swift in Sources */,
 				E69FD4ED29216B60004B49B2 /* ReusableView.swift in Sources */,
