@@ -20,6 +20,8 @@ target 'MVVMMovie' do
    # Network
    pod 'Firebase/RemoteConfig'
    pod 'Alamofire', '~> 5.6'
+   pod 'Firebase/Core'
+   pod 'FirebaseMessaging'
 
 
 end
