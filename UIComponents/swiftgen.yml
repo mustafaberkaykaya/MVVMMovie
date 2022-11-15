@@ -1,0 +1,42 @@
+strings:
+  inputs: UIComponents/Resources/Strings/Localizable.strings
+  outputs:
+    templatePath: ../SwiftGenTemplates/strings.stencil
+    output: UIComponents/Resources/Strings/StringsConstant.swift
+    params:
+        publicAccess: public
+
+fonts:
+  inputs: UIComponents/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: UIComponents/Resources/Fonts/Fonts.swift
+    params:
+        publicAccess: public
+
+xcassets:
+  - inputs:
+    - UIComponents/Resources/Assets/Colors.xcassets
+    - UIComponents/Resources/Assets/Images.xcassets
+    outputs:
+      - templateName: swift5
+        output: UIComponents/Resources/Assets/Assets.swift
+        params:
+            publicAccess: public
+
+  - inputs:
+    - UIComponents/Resources/Assets/Colors.xcassets
+    outputs:
+      - templatePath: ../SwiftGenTemplates/colors.stencil
+        output: UIComponents/Resources/Assets/UIColor+Colors.swift
+        params:
+            publicAccess: public
+            
+  - inputs:
+    - UIComponents/Resources/Assets/Images.xcassets
+    outputs:
+      - templatePath: ../SwiftGenTemplates/images.stencil
+        output: UIComponents/Resources/Assets/UIImage+Images.swift
+        params:
+            publicAccess: public
+

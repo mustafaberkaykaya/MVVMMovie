@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  UIComponents
+
+  Created by Berkay on 12.11.2022.
+  
+*/
+
+// MARK: - SplashScreen
+"Splash.nonWifi" = "İnternet bağlantınız bulunmamaktadır.";
+
+// MARK: - HomeScreen
+"Home.SeachBar" = "Search";
+"Home.MovieError" = "Movie Not Found";
+
+// MARK: - HomeDetail
+"Detail.movieDesTitle" = "Movie Description";
+"Detail.actorsTitle" = "Actors";
+"Detail.yearTitle" = "Year";
